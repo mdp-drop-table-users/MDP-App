@@ -1,5 +1,3 @@
-import api from 'api';
-
 export const TEST_ACTION = 'TEST_ACTION';
 
 export const TEST_ASYNC_ACTION_START = 'TEST_ASYNC_ACTION_START';
@@ -40,9 +38,6 @@ export function testAsync() {
   return function (dispatch) {
     dispatch(testAsyncStart());
 
-    api.testAsync()
-      .then(data => dispatch(testAsyncSuccess(data)))
-      .catch(error => dispatch(testAsyncError(error)));
   };
 }
 
