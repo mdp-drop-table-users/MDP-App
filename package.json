@@ -1,0 +1,19 @@
+{
+  "name": "hospital-scheduler-web",
+  "version": "1.0.0",
+  "description": "The web version of the hospital scheduler",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zckly/hospital-scheduler-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zckly/hospital-scheduler-web/issues"
+  },
+  "homepage": "https://github.com/zckly/hospital-scheduler-web#readme"
+}
