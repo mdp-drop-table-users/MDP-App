@@ -52,9 +52,10 @@ const rules = [
   {
     test: /\.(js|jsx)$/,
     exclude: /node_modules/,
-    use: [
-      'babel-loader',
-    ],
+    loaders: 'babel-loader',
+    query: {
+      presets: ['es2015', 'react', 'stage-1']
+    }
   },
   {
     test: /\.(png|gif|jpg|svg)$/,
@@ -103,6 +104,7 @@ if (isProduction) {
 } else {
   // Development plugins
   plugins.push(
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new DashboardPlugin()
   );
