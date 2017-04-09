@@ -1,7 +1,7 @@
 {
-  "name": "hospital-scheduler-web",
+  "name": "React-Redux-Boilerplate",
   "version": "1.0.0",
-  "description": "The web version of the hospital scheduler",
+  "description": "Quick Boilerplate with React, Redux, Webpack 2, Express.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
