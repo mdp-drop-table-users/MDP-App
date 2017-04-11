@@ -1,7 +1,5 @@
-# hospital-scheduler-web
-The web version of the hospital scheduler
+# React Redux Boilerplate
 
-
-# Todos:
-[] create server
-[] create calendar view
+## To Start:
+1) `npm install` (or `yarn`)
+2) `npm start`
