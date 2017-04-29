@@ -14,15 +14,15 @@ body {
 .banner {
   width: 100%;
   background-color: #26cba2;
-  padding: 2vh 0vw;
-  color: white;
-  letter-spacing: .1vw;
+  padding: .3vh 0vw;
 }
 .banner img {
   float: left;
 }
 .banner h1 {
   position: relative;
+  color: white;
+  letter-spacing: .3vw;
 }
 
 /* Dropdown */
