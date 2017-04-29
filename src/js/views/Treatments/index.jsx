@@ -9,6 +9,8 @@ export default class Treatments extends Component {
     return (
       <div className='Dashboard'>
         Hello!! This is analytics page
+
+        Here we select a patient and condition and submit.
       </div>
     );
   }
