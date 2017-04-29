@@ -1,7 +1,7 @@
 {
-  "name": "React-Redux-Boilerplate",
+  "name": "mdp-app",
   "version": "1.0.0",
-  "description": "Quick Boilerplate with React, Redux, Webpack 2, Express.",
+  "description": "An app for the MDP Hackathon",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
