@@ -5,12 +5,16 @@ import App from 'views/App';
 import Dashboard from 'views/Dashboard';
 import CalendarView from 'views/CalendarView';
 import NotFound from 'views/NotFound';
+import Treatments from 'views/Treatments';
+import Search from 'views/Search';
 
 const publicPath = '/';
 
 export const routeCodes = {
-  DASHBOARD: publicPath,
-  CALENDAR_VIEW: `${ publicPath }calendar`,
+  // DASHBOARD: publicPath,
+  // CALENDAR_VIEW: `${ publicPath }calendar`,
+  TREATMENTS: publicPath,
+  REFER: `${ publicPath }refer`,
 };
 
 export default class Routes extends Component {
@@ -18,10 +22,10 @@ export default class Routes extends Component {
     return (
       <Router history={ browserHistory }>
         <Route path={ publicPath } component={ App }>
-          <IndexRoute component={ Dashboard } />
-          <Route path={ routeCodes.DASHBOARD } component={ Dashboard } />
-          <Route path={ routeCodes.CALENDAR_VIEW } component={ CalendarView } />
-
+          <IndexRoute component={ Treatments } />
+          {/*<Route path={ routeCodes.DASHBOARD } component={ Dashboard } />
+          <Route path={ routeCodes.CALENDAR_VIEW } component={ CalendarView } />*/}
+          <Route path={ routeCodes.REFER } component={ Search } />
           <Route path='*' component={ NotFound } />
         </Route>
       </Router>

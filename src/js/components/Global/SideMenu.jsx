@@ -31,16 +31,13 @@ export default class SideMenu extends Component {
     return (
       <div className='SideMenu'>
         <ul>
-          <IndexLink className="link" to={ routeCodes.DASHBOARD }>
+          <IndexLink className="link" to={ routeCodes.TREATMENTS }>
             <div dangerouslySetInnerHTML={{ __html: homeSvg}}></div>
-            <div>Dashboard</div>
+            <div>Treatments</div>
           </IndexLink>
-          <Link className="link" to={ routeCodes.CALENDAR_VIEW }>
+          <Link className="link" to={ routeCodes.REFER }>
             <div dangerouslySetInnerHTML={{ __html: calendarSvg}}></div>
-            <div>Calendar</div>
-          </Link>
-          <Link className="link" to='404'>
-            <div>404</div>
+            <div>Refer</div>
           </Link>
         </ul>
       </div>
