@@ -39,7 +39,8 @@ const middleware = webpackMiddleware(compiler, {
 app.use(middleware);
 app.use(webpackHotMiddleware(compiler));
 app.get('*', function response(req, res) {
-  res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'src/index.html')));
+  // res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'src/index.html')));
+  res.send(path.join(__dirname, 'src/index.html'));
   res.end();
 });
 
@@ -49,4 +50,3 @@ app.listen(port, '0.0.0.0', function onStart(err) {
   }
   console.info('==> 🌎 Listening on port %s. Open up http://0.0.0.0:%s/ in your browser.', port, port);
 });
-  
