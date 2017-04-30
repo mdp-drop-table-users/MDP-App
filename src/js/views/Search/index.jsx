@@ -6,20 +6,35 @@ import { RadioGroup, Radio } from 'react-radio-group';
 import $ from 'jquery';
 import typed from './typed';
 
-class SearchResults extends Component {
+class SearchResult extends Component {
   constructor(props) {
     super(props);
   }
+  render() {
+    return (
+      <div>
+        <h4>{this.props.result.name}</h4>
+        <div>{this.props.result.reasons}</div>
+        <div>{this.props.result.match}</div>
+      </div>
+    )
+  }
+}
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.resultsArray.length > 0) {
-
+class SearchResults extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      resultsArray: [],
     }
   }
   render() {
+    const componentsArray = this.props.resultsArray.map((result) => (
+      <SearchResult result={result} />
+    ))
     return (
       <div className="results">
-        <h1>{this.props.title}</h1>
+        {componentsArray}
       </div>
     )
   }
@@ -42,14 +57,27 @@ export default class Search extends Component {
     console.log('condition', this.inputCondition.value);
     const resultsArray = [
       {
-        name: 'Hello',
-
+        name: 'Ardy Kamdani',
+        reasons: ['Big dick', 'bigger dick'],
         match: 46,
+
+      },
+      {
+        name: 'Josh Marasigan',
+        reasons: ['Small dick', 'No game'],
+        match: 93,
+
+      },
+      {
+        name: 'John Smith',
+        reasons: ['Generic name', 'fat man'],
+        match: 43,
+
       }
     ]
     this.setState({
       resultsTitle: this.inputCondition.value,
-      resultsArray: [],
+      resultsArray: resultsArray,
     })
   }
 
@@ -84,11 +112,6 @@ export default class Search extends Component {
   }
 
   render() {
-    const typeArray = [
-      'BEST MOVE',
-      'MEDICAL TRUST',
-      'DOCTOR',
-    ]
     return (
       <div className='Dashboard bgA'>
         <h1>FIND YOUR</h1>
