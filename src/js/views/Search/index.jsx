@@ -55,7 +55,8 @@ class SearchResults extends Component {
     return (
       <Grid className='bgA_wrap'>
         <div className="loader" style={loading ? {} : {display: 'none'}}></div>
-        <h2 style={resultsArray.length == 0 ? {display:'none'} : {}}>HEALTHCARE PROVIDERS</h2>
+        <h2 style={resultsArray.length == 0 ? {display:'none'} : {}}>HEALTHCARE 
+        <span className="whiteText">PROVIDERS</span></h2>
         <br/>
         <div className='scrollDiv styleScroll'>
           {componentsArray}
@@ -220,8 +221,8 @@ export default class Search extends Component {
             </FormGroup>
             <FormGroup>
               <RadioGroup className='radio-buttons' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
-                <Radio value="Orthopedic" /><span className="label">Orthopedic</span>
-                <Radio value="Orthopedic" /><span className="label">Orthopedic</span>
+                <Radio value="Male" /><span className="label">Male</span>
+                <Radio value="Female" /><span className="label">Female</span>
               </RadioGroup>
             </FormGroup>
             <FormGroup controlId="formControlsSelect">
