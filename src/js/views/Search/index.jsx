@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { Form, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
+import { Grid, Row, Col, Form, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 import Typist from 'react-typist';
 import { RadioGroup, Radio } from 'react-radio-group';
 import $ from 'jquery';
@@ -12,11 +12,15 @@ class SearchResult extends Component {
   }
   render() {
     return (
-      <div>
-        <h4>{this.props.result.name}</h4>
-        <div>{this.props.result.reasons}</div>
-        <div>{this.props.result.match}</div>
-      </div>
+      <Row>
+        <Col xs={9}>
+          <h4>{this.props.result.name}</h4>
+          <div>{this.props.result.reasons}</div>
+        </Col>
+        <Col xs={3}>
+          {this.props.result.match}
+        </Col>
+      </Row>
     )
   }
 }
@@ -33,9 +37,9 @@ class SearchResults extends Component {
       <SearchResult result={result} />
     ))
     return (
-      <div className='bgA_wrap'>
+      <Grid className='bgA_wrap'>
         {componentsArray}
-      </div>
+      </Grid>
     )
   }
 }
