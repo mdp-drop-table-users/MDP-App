@@ -35,11 +35,13 @@ export default class Search extends Component {
     console.log('condition', this.inputCondition.value);
     const resultsArray = [
       {
+        name: 'Hello',
 
+        match: 46,
       }
     ]
     this.setState({
-      resultsTitle: 'Hi',
+      resultsTitle: this.inputCondition.value,
       resultsArray: [],
     })
   }
