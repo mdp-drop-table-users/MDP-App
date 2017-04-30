@@ -123,11 +123,16 @@ body {
   text-align: center;
 }
 
+.bgA_wrap {
+  width: 50%;
+  padding: 0vh 8vw;
+}
+
 .bgA {
   padding-top: 16vh;
   padding-bottom: 28vh;
-  padding-left: 35vw;
-  padding-right: 35vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 	background-image: url("http://tinyimg.io/i/QRDFsYU.png");
 	background-size: cover;
 	height: 93vh;

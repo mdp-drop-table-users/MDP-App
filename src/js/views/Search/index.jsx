@@ -115,36 +115,38 @@ export default class Search extends Component {
   render() {
     return (
       <div className='Dashboard bgA'>
-        <h1>FIND YOUR</h1>
-        <h1 className="elementTyped" style={{color:"#26cba2"}}></h1>
-        <br/>
-        <Form onSubmit={this.handleSubmit.bind(this)}>
-          <FormGroup controlId="formControlsSelect">
-            <ControlLabel className="label">Select Patient</ControlLabel>
-            <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputPatient = ref; }}>
-              <option value="select">Select</option>
-              <option value="other">...</option>
-            </FormControl>
-          </FormGroup>
-          <FormGroup>
-            <RadioGroup className='radio-buttons' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
-              <Radio value="male" /><span className="label">Male</span>
-              <Radio value="female" /><span className="label">Female</span>
-            </RadioGroup>
-          </FormGroup>
-          <FormGroup controlId="formControlsSelect">
-            <ControlLabel className="label">Select Condition</ControlLabel>
-            <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputCondition = ref; }}>
-              <option value="select">Select</option>
-              <option value="other">...</option>
-            </FormControl>
-          </FormGroup>
+        <div className='bgA_wrap'>
+          <h1>FIND YOUR</h1>
+          <h1 className="elementTyped" style={{color:"#26cba2"}}></h1>
           <br/>
-          <div className="centerThis">
-            <Button type="submit">SUBMIT</Button>
-          </div>
-        </Form>
-        <SearchResults title={this.state.resultsTitle} resultsArray={this.state.resultsArray} />
+          <Form onSubmit={this.handleSubmit.bind(this)}>
+            <FormGroup controlId="formControlsSelect">
+              <ControlLabel className="label">Select Patient</ControlLabel>
+              <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputPatient = ref; }}>
+                <option value="select">Select</option>
+                <option value="other">...</option>
+              </FormControl>
+            </FormGroup>
+            <FormGroup>
+              <RadioGroup className='radio-buttons' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
+                <Radio value="male" /><span className="label">Male</span>
+                <Radio value="female" /><span className="label">Female</span>
+              </RadioGroup>
+            </FormGroup>
+            <FormGroup controlId="formControlsSelect">
+              <ControlLabel className="label">Select Condition</ControlLabel>
+              <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputCondition = ref; }}>
+                <option value="select">Select</option>
+                <option value="other">...</option>
+              </FormControl>
+            </FormGroup>
+            <br/>
+            <div className="centerThis">
+              <Button type="submit">SUBMIT</Button>
+            </div>
+          </Form>
+          <SearchResults title={this.state.resultsTitle} resultsArray={this.state.resultsArray} />
+        </div>
       </div>
     );
   }
