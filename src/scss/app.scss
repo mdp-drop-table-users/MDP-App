@@ -148,7 +148,7 @@ body {
 .btn {
 	background-color: #26cba2;
   color: white;
-  font-size: .8vw;
+  font-size: 1vw;
   border: none;
   cursor: pointer;
 	border-radius: 0px;
@@ -156,9 +156,6 @@ body {
 
   width: 7.5vw;
   height: 7.5vw;
-
-  webkit-transition: 2s;
-  transition: 2s;
 
   background: linear-gradient(to bottom, transparent 35%, #26cba2 35%, #26cba2 65%, transparent 65%),
   linear-gradient(to right, transparent 35%, #26cba2 35%, #26cba2 65%,  transparent 65%),
