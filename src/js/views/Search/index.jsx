@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Form, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 import Typist from 'react-typist';
 import { RadioGroup, Radio } from 'react-radio-group';
+import $ from 'jquery';
+import typed from './typed';
 
 class SearchResults extends Component {
   constructor(props) {
@@ -91,6 +93,7 @@ export default class Search extends Component {
       <div className='Dashboard bgA'>
         <h1>FIND YOUR</h1>
         <h1 className="elementTyped" style={{color:"#26cba2"}}></h1>
+        <br/>
         <Form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup controlId="formControlsSelect">
             <ControlLabel className="label">Select Patient</ControlLabel>
