@@ -51,17 +51,17 @@ export default class Search extends Component {
     $(function(){
         $(".elementTyped").typed({
             strings: ["BEST MOVE ^1000", "MEDICAL TRUST ^1000", "PERFECT DOCTOR ^1000"],
-            typeSpeed: 10,
+            typeSpeed: 15,
             startDelay: 100,
         backSpeed: 0,
         // time before backspacing
         backDelay: 500,
         // loop
-        loop: true,
+        loop: false,
         // false = infinite
-        loopCount: 4,
+        loopCount: 2,
         // show cursor
-        showCursor: false,
+        showCursor: true,
         // character for cursor             
         });
     });
@@ -74,10 +74,9 @@ export default class Search extends Component {
   render() {
     return (
       <div className='Dashboard bgA'>
+
         <h1>FIND YOUR</h1>
-        <h1 className="elementTyped" style={{color:"#26cba2"}}>
-        </h1>
-        <br/>
+        <h1 className="elementTyped" style={{color:"#26cba2"}}></h1>
 
         <Form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup controlId="formControlsSelect">
