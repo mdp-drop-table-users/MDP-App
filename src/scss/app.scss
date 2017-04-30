@@ -314,7 +314,8 @@ body {
   font-size: 2vh;
   padding-top: 1vh;
   padding-bottom: 1vh;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-style: italic;
   font-weight: 400;
   letter-spacing: .15vw;
 
@@ -324,7 +325,8 @@ body {
     color: #26cba2;
     font-size: 2vh;
     font-weight: 600;
-    text-transform: capitalize;
+    font-style: normal;
+    text-transform: uppercase;
     letter-spacing: .5vw;
   }
 }

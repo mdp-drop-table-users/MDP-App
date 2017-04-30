@@ -84,54 +84,54 @@ export default class Search extends Component {
     const resultsArray = [
       {
         name: 'Cathy Kamdani',
-        reasons: ['Austin Regional Clinic','<br />', 'Orthopedic'],
+        reasons: ['Austin Regional Clinic |', ' Orthopedic'],
         match: 91,
 
       },
       {
         name: 'Josh Marasigan',
-        reasons: ['Texas Orthopedic Surgery Center','<br />', 'Orthopedic'],
+        reasons: ['Texas Orthopedic Surgery Center |', ' Orthopedic'],
         match: 89,
 
       },
       {
         name: 'Jane Smith',
-        reasons: ['Austin Regional Clinic','<br />', 'Orthopedic'],
+        reasons: ['Austin Regional Clinic |', ' Orthopedic'],
         match: 87,
       },
       {
         name: 'Ryan Khalid',
-        reasons: ['Austin Skeletal Trauma Specialists', '<br />' ,'Orthopedic'],
+        reasons: ['Austin Skeletal Trauma Specialists ','| Orthopedic'],
         match: 87,
       },
       {
         name: 'David Nguyen',
-        reasons: ['David Nguyen, MD', '<br />','Orthopedic'],
+        reasons: ['David Nguyen, MD |',' Orthopedic'],
         match: 83,
       },
       {
         name: 'Zack Lee',
-        reasons: ['Austin Bone and Joint Clinic', '<br />','Orthopedic'],
+        reasons: ['Austin Bone and Joint Clinic |',' Orthopedic'],
         match: 78,
       },
       {
         name: 'Jacqueline Foo',
-        reasons: ['Dr.Jacqueline Foo, MD', '<br />','Orthopedic'],
+        reasons: ['Dr.Jacqueline Foo, MD |',' Orthopedic'],
         match: 73,
       },
       {
         name: 'Matthew Mattison',
-        reasons: ['Austin Regional Clinic', '<br />','Orthopedic'],
+        reasons: ['Austin Regional Clinic |',' Orthopedic'],
         match: 64,
       },
       {
         name: 'Ash Vu',
-        reasons: ['Ash Vu, MD','<br />', 'Orthopedic'],
+        reasons: ['Ash Vu, MD |',' Orthopedic'],
         match: 60,
       },
       {
         name: 'Justin Tran',
-        reasons: ['Austin Regional Clinic', '<br />','Orthopedic'],
+        reasons: ['Austin Regional Clinic |',' Orthopedic'],
         match: 51,
       },
     ]
