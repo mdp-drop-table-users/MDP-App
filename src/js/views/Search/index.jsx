@@ -45,7 +45,7 @@ export default class Search extends Component {
   }
   render() {
     return (
-      <div className='Dashboard'>
+      <div className='Dashboard bgA'>
         <Form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup controlId="formControlsSelect">
             <ControlLabel>Select Patient</ControlLabel>
