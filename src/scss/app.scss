@@ -24,6 +24,11 @@ body {
   width: 100%;
 }
 
+.elementTyped {
+  height: 10px;
+  font-size: 20px;
+}
+
 .banner {
   width: 100%;
   background-color: #26cba2;
@@ -33,13 +38,14 @@ body {
   	display: inline-block;
     width: 2.5%;
   }
-  h1 {
+  h2 {
   	float: left;
     color: white;
     letter-spacing: .3vw;
     padding-left: .5vw;
     margin: 0px;
     padding-right: .8vw;
+    font-weight: 400;
   }
   .link {
   	float: right;
@@ -47,6 +53,11 @@ body {
   	color: white;
   	letter-spacing: .3vw;
   	cursor: pointer;
+    font-weight: 400;
+  }
+  .link:hover {
+    text-decoration: none;
+    opacity: .8;
   }
 }
 
@@ -100,7 +111,7 @@ body {
 }
 
 .bgA {
-	padding: 30vh 35vw;
+	padding: 28vh 35vw;
 	background-image: url("http://tinyimg.io/i/6OqO5rs.png");
 	background-size: cover;
 	height: 100vh;
@@ -119,6 +130,7 @@ body {
 }
 
 .btn {
+  float: right;
 	background-color: #26cba2;
   	color: white;
   	font-size: 1vw;
