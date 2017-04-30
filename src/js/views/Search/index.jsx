@@ -8,7 +8,7 @@ export default class Search extends Component {
   }
   render() {
     return (
-      <div className='Dashboard'>
+      <div className='Dashboard bgA'>
         <FormGroup controlId="formControlsSelect">
           <ControlLabel>Select Patient</ControlLabel>
           <FormControl componentClass="select" placeholder="select">

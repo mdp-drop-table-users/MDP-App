@@ -34,9 +34,15 @@ body {
     padding: 1% 0% 0% 0%;
   }
   h1 {
+  	display: inline-block;
     position: relative;
     color: white;
     letter-spacing: .3vw;
+  }
+  .link {
+  	float: right;
+  	position: relative;
+  	color: white;
   }
 }
 
@@ -87,4 +93,30 @@ body {
   color: #ec109c;
   letter-spacing: .3vw;
   font-weight: 400;
+}
+
+.bgA {
+	padding: 30vh 35vw;
+	background-image: url("http://tinyimg.io/i/6OqO5rs.png");
+	background-size: cover;
+	height: 100vh;
+}
+
+.btn {
+	background-color: #26cba2;
+  	color: white;
+  	padding: 1vh;
+  	font-size: 16px;
+  	border: none;
+  	cursor: pointer;
+	font-size: 1.5vw;
+	border-radius: 0px;
+	webkit-transition: .2s;
+	transition: .2s;
+}
+
+.btn:hover {
+	background-color: #26cba2;
+	opacity: .8;
+	padding-right: 15vw;
 }
