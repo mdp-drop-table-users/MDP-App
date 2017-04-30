@@ -84,54 +84,54 @@ export default class Search extends Component {
     const resultsArray = [
       {
         name: 'Cathy Kamdani',
-        reasons: ['43','<br />', 'Orthopedic'],
+        reasons: ['Austin Regional Clinic','<br />', 'Orthopedic'],
         match: 91,
 
       },
       {
         name: 'Josh Marasigan',
-        reasons: ['33','<br />', 'Orthopedic'],
+        reasons: ['Texas Orthopedic Surgery Center','<br />', 'Orthopedic'],
         match: 89,
 
       },
       {
         name: 'Jane Smith',
-        reasons: ['39','<br />', 'Orthopedic'],
+        reasons: ['Austin Regional Clinic','<br />', 'Orthopedic'],
         match: 87,
       },
       {
         name: 'Ryan Khalid',
-        reasons: ['55', '<br />' ,'Orthopedic'],
+        reasons: ['Austin Skeletal Trauma Specialists', '<br />' ,'Orthopedic'],
         match: 87,
       },
       {
         name: 'David Nguyen',
-        reasons: ['38', '<br />','Orthopedic'],
+        reasons: ['David Nguyen, MD', '<br />','Orthopedic'],
         match: 83,
       },
       {
         name: 'Zack Lee',
-        reasons: ['50', '<br />','Orthopedic'],
+        reasons: ['Austin Bone and Joint Clinic', '<br />','Orthopedic'],
         match: 78,
       },
       {
         name: 'Jacqueline Foo',
-        reasons: ['49', '<br />','Orthopedic'],
+        reasons: ['Dr.Jacqueline Foo, MD', '<br />','Orthopedic'],
         match: 73,
       },
       {
         name: 'Matthew Mattison',
-        reasons: ['61', '<br />','Orthopedic'],
+        reasons: ['Austin Regional Clinic', '<br />','Orthopedic'],
         match: 64,
       },
       {
         name: 'Ash Vu',
-        reasons: ['31','<br />', 'Orthopedic'],
+        reasons: ['Ash Vu, MD','<br />', 'Orthopedic'],
         match: 60,
       },
       {
         name: 'Justin Tran',
-        reasons: ['38', '<br />','Orthopedic'],
+        reasons: ['Austin Regional Clinic', '<br />','Orthopedic'],
         match: 51,
       },
     ]
