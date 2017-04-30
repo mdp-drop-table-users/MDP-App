@@ -13,11 +13,11 @@ class SearchResult extends Component {
   render() {
     return (
       <Row>
-        <Col xs={9}>
-          <h4>{this.props.result.name}</h4>
+        <Col className="doctorFields" xs={9}>
+          <h2>{this.props.result.name}</h2>
           <div>{this.props.result.reasons}</div>
         </Col>
-        <Col xs={3}>
+        <Col className="doctorRank" xs={3}>
           {this.props.result.match}
         </Col>
       </Row>
@@ -37,7 +37,7 @@ class SearchResults extends Component {
       <SearchResult result={result} />
     ))
     return (
-      <Grid className='bgA_wrap'>
+      <Grid className='bgA_wrap scrollDiv styleScroll'>
         {componentsArray}
       </Grid>
     )

@@ -126,7 +126,12 @@ body {
 .bgA_wrap {
   width: 50%;
   padding: 0vh 8vw;
-  display: inline-grid;
+  display: inline-grid;  
+}
+
+// scrollbar
+.scrollDiv {
+  overflow-y:scroll;
 }
 
 .bgA {
@@ -191,4 +196,43 @@ body {
 
 .space:hover {
   opacity: .8;
+}
+
+/* Scrollbar style */
+.styleScroll::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.styleScroll::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+.styleScroll::-webkit-scrollbar-thumb
+{
+  background-color: #000000;
+}
+
+
+/* BGB Style */
+.doctorFields {
+  font-size: 15px;
+  
+  h2 {
+    margin: 0;
+    padding-top: 0;
+    color: #26cba2;
+  }
+}
+
+.doctorRank {
+  color: white;
+  background-color: #26cba2;
+  border-radius: 50%;
+  width: 4.5vw;
+  height: 4.5vw;
+  font-size: 5vh;
 }
