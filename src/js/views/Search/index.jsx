@@ -2,13 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Form, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 import Typist from 'react-typist';
-<<<<<<< HEAD
 import { RadioGroup, Radio } from 'react-radio-group';
-
-=======
-import typed from './typed.js';
-import $ from 'jquery';
->>>>>>> 7ba79307d2c388cde3823e3ac1512baa70dd2651
 
 class SearchResults extends Component {
   constructor(props) {
