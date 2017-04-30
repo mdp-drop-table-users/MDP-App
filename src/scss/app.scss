@@ -260,16 +260,22 @@ body {
   width: 7.5vw;
   height: 7.5vw;
 
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
   background: linear-gradient(to bottom, transparent 35%, #26cba2 35%, #26cba2 65%, transparent 65%),
   linear-gradient(to right, transparent 35%, #26cba2 35%, #26cba2 65%,  transparent 65%),
 }
 
 .btn:hover, .btn:active, .btn:focus{
+
   outline: none;
   border: none;
   color: white;
-  background: linear-gradient(to bottom, transparent 35%, #26cba2 35%, #26cba2 65%, transparent 65%),
-  linear-gradient(to right, transparent 35%, #26cba2 35%, #26cba2 65%,  transparent 65%),
+  background: linear-gradient(to bottom, transparent 35%, #1be59e 35%, #1be59e 65%, transparent 65%),
+  linear-gradient(to right, transparent 35%, #1be59e 35%, #1be59e 65%,  transparent 65%),
 }
 
 .radio-buttons {
