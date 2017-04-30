@@ -11,12 +11,16 @@ class SearchResult extends Component {
     super(props);
   }
   getColor(match) {
-    if (match < 50) {
-      return '#dd3556';
-    } else if (match < 75) {
-      return '#eff254';
-    } else {
+    if (match < 60) {
+      return '#c94444';
+    } else if (match < 70) {
+      return '#cfd68f';
+    } else if (match < 80) {
+      return '#9fce90';
+    } else if (match < 90) {
       return '#9eefdb';
+    } else {
+      return '#eff254';
     }
   }
   render() {
@@ -72,22 +76,56 @@ export default class Search extends Component {
     console.log('condition', this.inputCondition.value);
     const resultsArray = [
       {
-        name: 'Ardy Kamdani',
-        reasons: ['Big dick', 'bigger dick'],
-        match: 46,
+        name: 'Cathy Kamdani',
+        reasons: ['43', 'Female'],
+        match: 91,
 
       },
       {
         name: 'Josh Marasigan',
-        reasons: ['Small dick', 'No game'],
-        match: 93,
+        reasons: ['33', 'Male'],
+        match: 89,
 
       },
       {
-        name: 'John Smith',
-        reasons: ['Generic name', 'fat man'],
-        match: 43,
-
+        name: 'Jane Smith',
+        reasons: ['39', 'Female'],
+        match: 87,
+      }
+      {
+        name: 'Ryan Khalid',
+        reasons: ['55', 'Male'],
+        match: 87,
+      }
+      {
+        name: 'David Nguyen',
+        reasons: ['38', 'Male'],
+        match: 83,
+      }
+      {
+        name: 'Zack Lee',
+        reasons: ['50', 'Male'],
+        match: 78,
+      }
+      {
+        name: 'Jacqueline Foo',
+        reasons: ['49', 'Female'],
+        match: 73,
+      }
+      {
+        name: 'Matthew Mattison',
+        reasons: ['61', 'Male'],
+        match: 64,
+      }
+      {
+        name: 'Ash Vu',
+        reasons: ['31', 'Female'],
+        match: 60,
+      }
+      {
+        name: 'Justin Tran',
+        reasons: ['38', 'Male'],
+        match: 51,
       }
     ]
     this.setState({
