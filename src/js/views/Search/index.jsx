@@ -2,8 +2,13 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Form, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 import Typist from 'react-typist';
+<<<<<<< HEAD
 import { RadioGroup, Radio } from 'react-radio-group';
 
+=======
+import typed from './typed.js';
+import $ from 'jquery';
+>>>>>>> 7ba79307d2c388cde3823e3ac1512baa70dd2651
 
 class SearchResults extends Component {
   constructor(props) {
@@ -52,6 +57,26 @@ export default class Search extends Component {
     })
   }
 
+  componentDidMount() {
+    $(function(){
+        $(".elementTyped").typed({
+            strings: ["BEST MOVE ^1000", "MEDICAL TRUST ^1000", "PERFECT DOCTOR ^1000"],
+            typeSpeed: 15,
+            startDelay: 100,
+        backSpeed: 0,
+        // time before backspacing
+        backDelay: 500,
+        // loop
+        loop: false,
+        // false = infinite
+        loopCount: 2,
+        // show cursor
+        showCursor: true,
+        // character for cursor
+        });
+    });
+  }
+
   onTyped(line, lineIdx) {
     console.log(line + " " + lineIdx);
     this.setState({typeIndex: this.state.typeIndex++});
@@ -71,12 +96,7 @@ export default class Search extends Component {
     return (
       <div className='Dashboard bgA'>
         <h1>FIND YOUR</h1>
-        <h1 style={{color:"#26cba2"}}>
-          <Typist key={this.state.typeIndex} onLineTyped={this.onTyped.bind(this)}>
-            {typeArray[this.state.typeIndex]}
-          </Typist>
-        </h1>
-
+        <h1 className="elementTyped" style={{color:"#26cba2"}}></h1>
         <Form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup controlId="formControlsSelect">
             <ControlLabel className="label">Select Patient</ControlLabel>
