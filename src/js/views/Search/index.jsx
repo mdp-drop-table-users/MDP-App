@@ -71,7 +71,7 @@ export default class Search extends Component {
         // false = infinite
         loopCount: 2,
         // show cursor
-        showCursor: true,
+        showCursor: false,
         // character for cursor
         });
     });
