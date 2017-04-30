@@ -33,7 +33,7 @@ class SearchResults extends Component {
       <SearchResult result={result} />
     ))
     return (
-      <div className="results">
+      <div className='bgA_wrap'>
         {componentsArray}
       </div>
     )
@@ -84,7 +84,7 @@ export default class Search extends Component {
   componentDidMount() {
     $(function(){
         $(".elementTyped").typed({
-            strings: ["BEST MOVE ^1000", 
+            strings: ["BEST MOVE ^1000",
             "MEDICAL TRUST ^1000", "PERFECT DOCTOR ^1000"],
             typeSpeed: 10,
             startDelay: 100,
@@ -145,8 +145,8 @@ export default class Search extends Component {
               <Button type="submit">SUBMIT</Button>
             </div>
           </Form>
-          <SearchResults title={this.state.resultsTitle} resultsArray={this.state.resultsArray} />
         </div>
+        <SearchResults title={this.state.resultsTitle} resultsArray={this.state.resultsArray} />
       </div>
     );
   }
