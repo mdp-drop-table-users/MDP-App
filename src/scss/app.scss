@@ -27,11 +27,11 @@ body {
 .banner {
   width: 100%;
   background-color: #26cba2;
-  padding: .3vh 0vw;
+ 
   img {
   	position: relative;
   	display: inline-block;
-    width: 3%;
+    width: 2.5%;
   }
   h1 {
   	float: left;
@@ -39,6 +39,7 @@ body {
     letter-spacing: .3vw;
     padding-left: .5vw;
     margin: 0px;
+    padding-right: .8vw;
   }
   .link {
   	float: right;
