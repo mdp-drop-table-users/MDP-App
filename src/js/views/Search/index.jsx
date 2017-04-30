@@ -56,7 +56,8 @@ export default class Search extends Component {
   componentDidMount() {
     $(function(){
         $(".elementTyped").typed({
-            strings: ["BEST MOVE ^1000", "MEDICAL TRUST ^1000", "PERFECT DOCTOR ^1000"],
+            strings: ["BEST MOVE ^1000", 
+            "MEDICAL TRUST ^1000", "PERFECT DOCTOR ^1000"],
             typeSpeed: 10,
             startDelay: 100,
         backSpeed: 0,
