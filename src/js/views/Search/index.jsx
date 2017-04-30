@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Form, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
+import Typist from 'react-typist';
 
 class SearchResults extends Component {
   constructor(props) {
@@ -45,23 +46,37 @@ export default class Search extends Component {
       resultsArray: [],
     })
   }
+
+  onTyped(line, lineIdx) {
+    console.log(line + " " + lineIdx);
+  }
+
   render() {
     return (
       <div className='Dashboard bgA'>
-        <h1>FIND YOUR</h1> <h1 style={{color:"#26cba2"}}>PERFECT DOCTOR</h1>
+        <h1>FIND YOUR</h1>
+        <h1 style={{color:"#26cba2"}}>
+          <Typist onLineTyped={this.onTyped.bind(this)}>
+              BEST MOVE
+              <br/>
+              MEDICAL TRUST
+              <br/>
+              PERFECT DOCTOR
+          </Typist>
+        </h1>
 
         <Form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup controlId="formControlsSelect">
             <ControlLabel className="label">Select Patient</ControlLabel>
             <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputPatient = ref; }}>
-              <option value="select">select</option>
+              <option value="select">Select</option>
               <option value="other">...</option>
             </FormControl>
           </FormGroup>
           <FormGroup controlId="formControlsSelect">
             <ControlLabel className="label">Select Condition</ControlLabel>
             <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputCondition = ref; }}>
-              <option value="select">select</option>
+              <option value="select">Select</option>
               <option value="other">...</option>
             </FormControl>
           </FormGroup>
