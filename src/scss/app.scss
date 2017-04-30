@@ -219,12 +219,15 @@ body {
 
 /* BGB Style */
 .doctorFields {
-  font-size: 15px;
-  
+  font-size: 1.5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+
   h2 {
     margin: 0;
     padding-top: 0;
     color: #26cba2;
+    font-size: 2vh;
   }
 }
 
@@ -234,5 +237,10 @@ body {
   border-radius: 50%;
   width: 4.5vw;
   height: 4.5vw;
-  font-size: 5vh;
+  font-size: 3vh;
+
+  .doctorScore {
+    margin: 0 auto;
+    vertical-align: middle;
+  }
 }

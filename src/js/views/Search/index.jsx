@@ -18,7 +18,9 @@ class SearchResult extends Component {
           <div>{this.props.result.reasons}</div>
         </Col>
         <Col className="doctorRank" xs={3}>
-          {this.props.result.match}
+          <div className="doctorScore">
+            {this.props.result.match}
+          </div>
         </Col>
       </Row>
     )
