@@ -56,7 +56,7 @@ class SearchResults extends Component {
       <Grid className='bgA_wrap'>
         <div className="loader" style={loading ? {} : {display: 'none'}}></div>
         <h2 style={resultsArray.length == 0 ? {display:'none'} : {}}>HEALTHCARE PROVIDERS</h2>
-        <br/><br/>
+        <br/>
         <div className='scrollDiv styleScroll'>
           {componentsArray}
         </div>
@@ -72,7 +72,7 @@ export default class Search extends Component {
       resultsTitle: '',
       resultsArray: [],
       typeIndex: 0,
-      selectedValue: 'male',
+      selectedValue: 'Orthopedic',
       loading: false,
     }
     this.handleChange = this.handleChange.bind(this)
@@ -84,54 +84,54 @@ export default class Search extends Component {
     const resultsArray = [
       {
         name: 'Cathy Kamdani',
-        reasons: ['43', 'Female'],
+        reasons: ['43','<br />', 'Orthopedic'],
         match: 91,
 
       },
       {
         name: 'Josh Marasigan',
-        reasons: ['33', 'Male'],
+        reasons: ['33','<br />', 'Orthopedic'],
         match: 89,
 
       },
       {
         name: 'Jane Smith',
-        reasons: ['39', 'Female'],
+        reasons: ['39','<br />', 'Orthopedic'],
         match: 87,
       },
       {
         name: 'Ryan Khalid',
-        reasons: ['55', 'Male'],
+        reasons: ['55', '<br />' ,'Orthopedic'],
         match: 87,
       },
       {
         name: 'David Nguyen',
-        reasons: ['38', 'Male'],
+        reasons: ['38', '<br />','Orthopedic'],
         match: 83,
       },
       {
         name: 'Zack Lee',
-        reasons: ['50', 'Male'],
+        reasons: ['50', '<br />','Orthopedic'],
         match: 78,
       },
       {
         name: 'Jacqueline Foo',
-        reasons: ['49', 'Female'],
+        reasons: ['49', '<br />','Orthopedic'],
         match: 73,
       },
       {
         name: 'Matthew Mattison',
-        reasons: ['61', 'Male'],
+        reasons: ['61', '<br />','Orthopedic'],
         match: 64,
       },
       {
         name: 'Ash Vu',
-        reasons: ['31', 'Female'],
+        reasons: ['31','<br />', 'Orthopedic'],
         match: 60,
       },
       {
         name: 'Justin Tran',
-        reasons: ['38', 'Male'],
+        reasons: ['38', '<br />','Orthopedic'],
         match: 51,
       },
     ]
@@ -220,8 +220,8 @@ export default class Search extends Component {
             </FormGroup>
             <FormGroup>
               <RadioGroup className='radio-buttons' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
-                <Radio value="male" /><span className="label">Male</span>
-                <Radio value="female" /><span className="label">Female</span>
+                <Radio value="Orthopedic" /><span className="label">Orthopedic</span>
+                <Radio value="Orthopedic" /><span className="label">Orthopedic</span>
               </RadioGroup>
             </FormGroup>
             <FormGroup controlId="formControlsSelect">
