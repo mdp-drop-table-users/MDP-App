@@ -13,8 +13,8 @@ const publicPath = '/';
 export const routeCodes = {
   // DASHBOARD: publicPath,
   // CALENDAR_VIEW: `${ publicPath }calendar`,
-  TREATMENTS: publicPath,
-  REFER: `${ publicPath }refer`,
+  TREATMENTS: `${ publicPath }treatments`,
+  REFER: publicPath,
 };
 
 export default class Routes extends Component {
@@ -22,10 +22,8 @@ export default class Routes extends Component {
     return (
       <Router history={ browserHistory }>
         <Route path={ publicPath } component={ App }>
-          <IndexRoute component={ Treatments } />
-          {/*<Route path={ routeCodes.DASHBOARD } component={ Dashboard } />
-          <Route path={ routeCodes.CALENDAR_VIEW } component={ CalendarView } />*/}
-          <Route path={ routeCodes.REFER } component={ Search } />
+          <IndexRoute component={ Search } />
+          <Route path={ routeCodes.TREATMENTS } component={ Treatments } />
           <Route path='*' component={ NotFound } />
         </Route>
       </Router>
