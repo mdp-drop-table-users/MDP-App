@@ -226,8 +226,8 @@ body {
   padding-top: 1vh;
   padding-bottom: 1vh;
   text-transform: capitalize;
-  letter-spacing: .7vw;
   font-weight: 400;
+  letter-spacing: .15vw;
 
   h2 {
     margin: 0;
@@ -236,6 +236,7 @@ body {
     font-size: 2vh;
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: .7vw;
   }
 }
 
@@ -249,7 +250,5 @@ body {
   line-height: 40px;
 
   .doctorScore {
-    padding-top: 1vh;
-    padding-bottom: 1vh;
   }
 }
