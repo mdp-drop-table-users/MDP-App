@@ -100,6 +100,12 @@ body {
 	background-image: url("http://tinyimg.io/i/6OqO5rs.png");
 	background-size: cover;
 	height: 100vh;
+
+	h1 {
+		font-weight: 400;
+		font-size: 1vw;
+		letter-spacing: .3vw;
+	}
 }
 
 .btn {
