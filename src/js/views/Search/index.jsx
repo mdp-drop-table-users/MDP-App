@@ -194,7 +194,7 @@ export default class Search extends Component {
     return (
       <div className='Dashboard bgA'>
         <div className='bgA_wrap'>
-          <h1>Find your</h1>
+          <h1>FIND YOUR</h1>
           <span className="movingText">
             <h1 className="elementTyped" style={{color:"#26cba2"}}>
             
