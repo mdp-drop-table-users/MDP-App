@@ -55,8 +55,17 @@ class SearchResults extends Component {
     return (
       <Grid className='bgA_wrap'>
         <div className="loader" style={loading ? {} : {display: 'none'}}></div>
-        <h2 style={resultsArray.length == 0 ? {display:'none'} : {}}>HEALTHCARE 
-        <span className="whiteText">PROVIDERS</span></h2>
+
+        <h2 style={resultsArray.length == 0 ? {display:'none'} : {}}>
+          <span className="underlineText">
+             HEALTHCARE 
+            
+            <span className="whiteText">
+              PROVIDERS
+            </span>
+          </span>
+        </h2>
+
         <br/>
         <div className='scrollDiv styleScroll'>
           {componentsArray}
@@ -185,8 +194,12 @@ export default class Search extends Component {
     return (
       <div className='Dashboard bgA'>
         <div className='bgA_wrap'>
-          <h1>FIND YOUR</h1>
-          <h1 className="elementTyped" style={{color:"#26cba2"}}></h1>
+          <h1>Find your</h1>
+          <span className="movingText">
+            <h1 className="elementTyped" style={{color:"#26cba2"}}>
+            
+            </h1>
+          </span>
           <br/>
           <Form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup controlId="formControlsSelect">
