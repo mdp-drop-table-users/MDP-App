@@ -91,7 +91,7 @@ export default class Search extends Component {
     ]
     return (
       <div className='Dashboard bgA'>
-        <h1>FIND YOUR</h1>
+        <h1>Find your</h1>
         <h1 className="elementTyped" style={{color:"#26cba2"}}></h1>
         <br/>
         <Form onSubmit={this.handleSubmit.bind(this)}>
@@ -104,8 +104,8 @@ export default class Search extends Component {
           </FormGroup>
           <FormGroup>
             <RadioGroup className='radio-buttons' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
-              <Radio value="male" />Male
-              <Radio value="female" />Female
+              <Radio value="male" /><span className="label">Male</span>
+              <Radio value="female" /><span className="label">Female</span>
             </RadioGroup>
           </FormGroup>
           <FormGroup controlId="formControlsSelect">

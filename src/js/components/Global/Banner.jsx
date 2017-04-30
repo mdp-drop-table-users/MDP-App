@@ -11,13 +11,13 @@ export default class Banner extends Component {
         <img src="http://tinyimg.io/i/btWKblI.png" />
 
         <IndexLink className="link" to={ routeCodes.TREATMENTS }>
-         	<div>| TREATMENTS</div>
+         	<div> TREATMENTS</div>
         </IndexLink>
 
         <Link className="link" to={ routeCodes.REFER }>
          	<div>REFER |</div>
         </Link>
-        
+
       </div>
     );
   }
