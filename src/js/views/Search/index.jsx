@@ -53,7 +53,7 @@ class SearchResults extends Component {
     ))
     return (
       <Grid className='bgA_wrap'>
-        <h2>Health Provider</h2>
+        <h2>HEALTHCARE PROVIDERS</h2>
         
         <div className='scrollDiv styleScroll'>
           {componentsArray}
