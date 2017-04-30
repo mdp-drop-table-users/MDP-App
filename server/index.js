@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const webpackMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const DashboardPlugin = require('webpack-dashboard/plugin');
-
+const routes = require('./routes.js');
 const config = require('../webpack.config.js');
 
 const nodeEnv = process.env.NODE_ENV || 'development';
@@ -38,6 +38,7 @@ const middleware = webpackMiddleware(compiler, {
 
 app.use(middleware);
 app.use(webpackHotMiddleware(compiler));
+routes.setup(app);
 app.get('*', function response(req, res) {
   res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'src/index.html')));
   res.end();
