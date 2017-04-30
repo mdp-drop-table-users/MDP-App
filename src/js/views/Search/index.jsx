@@ -10,6 +10,15 @@ class SearchResult extends Component {
   constructor(props) {
     super(props);
   }
+  getColor(match) {
+    if (match < 50) {
+      return 'red';
+    } else if (match < 75) {
+      return 'yellow';
+    } else {
+      return 'green';
+    }
+  }
   render() {
     return (
       <Row>
@@ -17,7 +26,7 @@ class SearchResult extends Component {
           <h2>{this.props.result.name}</h2>
           <div>{this.props.result.reasons}</div>
         </Col>
-        <Col className="doctorRank" xs={3}>
+        <Col className="doctorRank" style={{backgroundColor: this.getColor(this.props.result.match)}} xs={3}>
           <div className="doctorScore">
             {this.props.result.match}
           </div>

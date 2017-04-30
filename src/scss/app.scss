@@ -126,7 +126,7 @@ body {
 .bgA_wrap {
   width: 50%;
   padding: 0vh 8vw;
-  display: inline-grid;  
+  display: inline-grid;
 }
 
 // scrollbar
@@ -157,7 +157,7 @@ body {
 }
 
 .btn {
-	background-color: #26cba2;
+	// background-color: #26cba2;
   color: white;
   font-size: 1vw;
   border: none;
@@ -238,12 +238,11 @@ body {
   color: white;
   background-color: #26cba2;
   border-radius: 50%;
-  width: 3vw;
-  height: 3vw;
-  font-size: 3vh;
-  line-height: 3vw;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  line-height: 60px;
 
   .doctorScore {
-    padding-left: .1vw;
   }
 }
