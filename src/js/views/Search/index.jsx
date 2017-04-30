@@ -12,11 +12,11 @@ class SearchResult extends Component {
   }
   getColor(match) {
     if (match < 50) {
-      return 'red';
+      return '#dd3556';
     } else if (match < 75) {
-      return 'yellow';
+      return '#eff254';
     } else {
-      return 'green';
+      return '#9eefdb';
     }
   }
   render() {
