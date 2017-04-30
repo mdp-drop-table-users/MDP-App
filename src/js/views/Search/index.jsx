@@ -11,13 +11,13 @@ class SearchResult extends Component {
     super(props);
   }
   getColor(match) {
-    if (match < 60) {
+    if (match < 70) {
       return '#c94444';
-    } else if (match < 70) {
-      return '#cfd68f';
     } else if (match < 80) {
-      return '#eff254';
+      return '#cfd68f';
     } else if (match < 90) {
+      return '#eff254';
+    } else if (match < 95) {
       return '#9eefdb';
     } else {
       return '#1be59e';
@@ -86,54 +86,54 @@ export default class Search extends Component {
       {
         name: 'Cathy Kamdani',
         reasons: ['Austin Regional Clinic |', ' Orthopedic'],
-        match: 91,
+        match: 98,
 
       },
       {
         name: 'Josh Marasigan',
         reasons: ['Texas Orthopedic Surgery Center |', ' Orthopedic'],
-        match: 89,
+        match: 96,
 
       },
       {
         name: 'Jane Smith',
         reasons: ['Austin Regional Clinic |', ' Orthopedic'],
-        match: 87,
+        match: 93,
       },
       {
         name: 'Ryan Khalid',
         reasons: ['Austin Skeletal Trauma Specialists ','| Orthopedic'],
-        match: 87,
+        match: 85,
       },
       {
         name: 'David Nguyen',
         reasons: ['David Nguyen, MD |',' Orthopedic'],
-        match: 83,
+        match: 81,
       },
       {
         name: 'Zack Lee',
         reasons: ['Austin Bone and Joint Clinic |',' Orthopedic'],
-        match: 78,
+        match: 80,
       },
       {
         name: 'Jacqueline Foo',
         reasons: ['Dr.Jacqueline Foo, MD |',' Orthopedic'],
-        match: 73,
+        match: 79,
       },
       {
         name: 'Matthew Mattison',
         reasons: ['Austin Regional Clinic |',' Orthopedic'],
-        match: 64,
+        match: 75,
       },
       {
         name: 'Ash Vu',
         reasons: ['Ash Vu, MD |',' Orthopedic'],
-        match: 60,
+        match: 68,
       },
       {
         name: 'Justin Tran',
         reasons: ['Austin Regional Clinic |',' Orthopedic'],
-        match: 51,
+        match: 65,
       },
     ]
     this.setState({
