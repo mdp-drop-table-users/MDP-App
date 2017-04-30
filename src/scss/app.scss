@@ -127,6 +127,13 @@ body {
   width: 50%;
   padding: 0 60px;
   display: inline-grid;
+
+  h2 {
+    color: #26cba2;
+    letter-spacing: .2vw;
+    font-weight: 400;
+    font-size: 4vh;
+  }
 }
 
 // scrollbar
@@ -138,7 +145,7 @@ body {
 }
 
 .bgA {
-  padding-top: 16vh;
+  padding-top: 13vh;
   padding-bottom: 28vh;
   padding-left: 1vw;
   padding-right: 1vw;
