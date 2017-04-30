@@ -176,11 +176,34 @@ export default class Search extends Component {
           <br/>
           <Form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup controlId="formControlsSelect">
-              <ControlLabel className="label">Select Patient</ControlLabel>
-              <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputPatient = ref; }}>
-                <option value="select">Select</option>
-                <option value="other">...</option>
+              <ControlLabel className="label">Condition</ControlLabel>
+              <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputCondition = ref; }}>
+                <option value>Pregnancy and Childbirth</option>
+                <option value>Inflammatory Bowel Disease</option>
+                <option value>Overactive Bladder</option>
+                <option value>Colorectal Cancer</option>
+                <option value>Breast Cancer</option>
+                <option value>Heart Failure</option>
+                <option value>Older Person</option>
+                <option value>Craniofacial Microsomia</option>
+                <option value>Dementia</option>
+                <option value>Coronary Artery Disease</option>
+                <option value>Localized Prostate Cancer</option>
+                <option value>Low Back Pain</option>
+                <option value>Cataracts</option>
+                <option value>Parkinson’s Disease</option>
+                <option value>Depression and Anxiety</option>
+                <option value>Advanced Prostate Cancer</option>
+                <option value>Cleft Lip and Palate</option>
+                <option value>Lung Cancer</option>
+                <option value>Hip and Knee Osteoarthritis</option>
+                <option value>Stroke</option>
+                <option value>Macular Degeneration</option>
               </FormControl>
+            </FormGroup>
+            <FormGroup controlId="age">
+              <ControlLabel className="label">Age</ControlLabel>
+              <FormControl type="number" />
             </FormGroup>
             <FormGroup>
               <RadioGroup className='radio-buttons' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
@@ -189,10 +212,12 @@ export default class Search extends Component {
               </RadioGroup>
             </FormGroup>
             <FormGroup controlId="formControlsSelect">
-              <ControlLabel className="label">Select Condition</ControlLabel>
-              <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputCondition = ref; }}>
-                <option value="select">Select</option>
-                <option value="other">...</option>
+              <ControlLabel className="label">Ethnicity</ControlLabel>
+              <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputPatient = ref; }}>
+                <option value="select">White</option>
+                <option value="other">Asian</option>
+                <option value="black">Black</option>
+                <option value="hispanic">Hispanic</option>
               </FormControl>
             </FormGroup>
             <br/>
