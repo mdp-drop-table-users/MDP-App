@@ -161,34 +161,12 @@ body {
   linear-gradient(to right, transparent 35%, #26cba2 35%, #26cba2 65%,  transparent 65%),
 }
 
-.btn:hover{
+.btn:hover, .btn:active, .btn:focus{
   outline: none;
   border: none;
   color: white;
   background: linear-gradient(to bottom, transparent 35%, #9eefdb 35%, #9eefdb 65%, transparent 65%),
   linear-gradient(to right, transparent 35%, #9eefdb 35%, #9eefdb 65%,  transparent 65%),
-}
-
-.btn:active {
-  border: none;
-  outline: none;
-}
-
-.btn:focus {
-  outline: none;
-    background-color: #26cba2;
-  color: white;
-  font-size: 1vw;
-  border: none;
-  cursor: pointer;
-  border-radius: 0px;
-  letter-spacing: .3vw;
-  border: none;
-  width: 7.5vw;
-  height: 7.5vw;
-
-  background: linear-gradient(to bottom, transparent 35%, #26cba2 35%, #26cba2 65%, transparent 65%),
-  linear-gradient(to right, transparent 35%, #26cba2 35%, #26cba2 65%,  transparent 65%),
 }
 
 .radio-buttons {
