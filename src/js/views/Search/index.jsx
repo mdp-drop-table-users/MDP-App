@@ -28,7 +28,6 @@ class SearchResult extends Component {
       <Row>
         <Col className="doctorFields" xs={9}>
           <h2>{this.props.result.name}</h2>
-          <br/><br/>
           <div>{this.props.result.reasons}</div>
         </Col>
         <Col className="doctorRank" style={{backgroundColor: this.getColor(this.props.result.match)}} xs={3}>
@@ -57,7 +56,7 @@ class SearchResults extends Component {
       <Grid className='bgA_wrap'>
         <div className="loader" style={loading ? {} : {display: 'none'}}></div>
         <h2 style={resultsArray.length == 0 ? {display:'none'} : {}}>HEALTHCARE PROVIDERS</h2>
-
+        <br/><br/>
         <div className='scrollDiv styleScroll'>
           {componentsArray}
         </div>
