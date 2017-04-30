@@ -3,12 +3,12 @@
 
 /* Colorway:
 26cba2
-ec109c
+9eefdb
  */
 
 /* Colorway:
 26cba2
-ec109c
+9eefdb
  */
 
 html {
@@ -26,26 +26,33 @@ body {
 
 .elementTyped {
   height: 10px;
-  font-size: 20px;
+  font-size: 100px;
+}
+
+.grayText {
+  color: #c7cfdd;
 }
 
 .banner {
   width: 100%;
   background-color: #26cba2;
+  height: 7vh;
 
   img {
   	position: relative;
   	display: inline-block;
     width: 2.5%;
+    padding-top: 1vh;
   }
   h2 {
   	float: left;
     color: white;
-    letter-spacing: .3vw;
+    letter-spacing: .7vw;
     padding-left: .5vw;
     margin: 0px;
     padding-right: .8vw;
     font-weight: 400;
+    padding-top: 1vh;
   }
   .link {
   	float: right;
@@ -54,6 +61,8 @@ body {
   	letter-spacing: .3vw;
   	cursor: pointer;
     font-weight: 400;
+    text-decoration: none;
+    padding-top: .8vh;
   }
   .link:hover {
     text-decoration: none;
@@ -64,7 +73,7 @@ body {
 /* Dropdown */
 
 .dropbtn {
-  background-color: #ec109c;
+  background-color: #9eefdb;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -105,16 +114,23 @@ body {
 }
 
 #search_menu h1 {
-  color: #ec109c;
+  color: #9eefdb;
   letter-spacing: .3vw;
   font-weight: 400;
 }
 
+.centerThis {
+  text-align: center;
+}
+
 .bgA {
-	padding: 28vh 35vw;
+  padding-top: 16vh;
+  padding-bottom: 28vh;
+  padding-left: 35vw;
+  padding-right: 35vw;
 	background-image: url("http://tinyimg.io/i/6OqO5rs.png");
 	background-size: cover;
-	height: 100vh;
+	height: 93vh;
 
 	h1 {
 		font-weight: 400;
@@ -130,27 +146,54 @@ body {
 }
 
 .btn {
-  float: right;
 	background-color: #26cba2;
-  	color: white;
-  	font-size: 1vw;
-  	border: none;
-  	cursor: pointer;
+  color: white;
+  font-size: .8vw;
+  border: none;
+  cursor: pointer;
 	border-radius: 0px;
-	webkit-transition: .2s;
-	transition: .2s;
-	letter-spacing: .3vw;
+  letter-spacing: .3vw;
+
+  width: 7.5vw;
+  height: 7.5vw;
+
+  webkit-transition: 2s;
+  transition: 2s;
+
+  background: linear-gradient(to bottom, transparent 35%, #26cba2 35%, #26cba2 65%, transparent 65%),
+  linear-gradient(to right, transparent 35%, #26cba2 35%, #26cba2 65%,  transparent 65%),
 }
 
+//Cross shape
+.btn:hover{
+  color: white;
+  background: linear-gradient(to bottom, transparent 35%, #9eefdb 35%, #9eefdb 65%, transparent 65%),
+  linear-gradient(to right, transparent 35%, #9eefdb 35%, #9eefdb 65%,  transparent 65%),
+}
+
+
+/*
 .btn:hover {
 	color: white;
 	background-color: #26cba2;
 	opacity: .8;
 }
+*/
 
 .radio-buttons {
   > input {
     margin-left: 10px;
     margin-right: 5px;
   }
+}
+
+.space {
+  height: 11vh;
+  padding-top: 1vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.space:hover {
+  opacity: .8;
 }
