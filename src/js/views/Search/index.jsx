@@ -91,42 +91,42 @@ export default class Search extends Component {
         name: 'Jane Smith',
         reasons: ['39', 'Female'],
         match: 87,
-      }
+      },
       {
         name: 'Ryan Khalid',
         reasons: ['55', 'Male'],
         match: 87,
-      }
+      },
       {
         name: 'David Nguyen',
         reasons: ['38', 'Male'],
         match: 83,
-      }
+      },
       {
         name: 'Zack Lee',
         reasons: ['50', 'Male'],
         match: 78,
-      }
+      },
       {
         name: 'Jacqueline Foo',
         reasons: ['49', 'Female'],
         match: 73,
-      }
+      },
       {
         name: 'Matthew Mattison',
         reasons: ['61', 'Male'],
         match: 64,
-      }
+      },
       {
         name: 'Ash Vu',
         reasons: ['31', 'Female'],
         match: 60,
-      }
+      },
       {
         name: 'Justin Tran',
         reasons: ['38', 'Male'],
         match: 51,
-      }
+      },
     ]
     this.setState({
       resultsTitle: this.inputCondition.value,
