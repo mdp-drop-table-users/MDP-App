@@ -30,7 +30,7 @@ body {
   padding: .3vh 0vw;
   img {
     float: left;
-    width: 4%;
+    width: 3%;
     padding: 1% 0% 0% 0%;
   }
   h1 {
@@ -103,15 +103,20 @@ body {
 
 	h1 {
 		font-weight: 400;
-		font-size: 1vw;
+		font-size: 1.5vw;
 		letter-spacing: .3vw;
 	}
+}
+
+.label {
+	font-weight: 400;
+	font-size: 1vw;
+	letter-spacing: .3vw;
 }
 
 .btn {
 	background-color: #26cba2;
   	color: white;
-  	padding: 1vh;
   	font-size: 16px;
   	border: none;
   	cursor: pointer;
@@ -119,10 +124,11 @@ body {
 	border-radius: 0px;
 	webkit-transition: .2s;
 	transition: .2s;
+	letter-spacing: .3vw;
 }
 
 .btn:hover {
+	color: white;
 	background-color: #26cba2;
 	opacity: .8;
-	padding-right: 15vw;
 }

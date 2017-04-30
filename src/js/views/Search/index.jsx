@@ -46,23 +46,24 @@ export default class Search extends Component {
   render() {
     return (
       <div className='Dashboard bgA'>
-        <h1>FIND YOUR PERFECT DOCTOR</h1>
+        <h1>FIND YOUR</h1> <h1 style={{color:"#26cba2"}}>PERFECT DOCTOR</h1>
 
         <Form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup controlId="formControlsSelect">
-            <ControlLabel>Select Patient</ControlLabel>
+            <ControlLabel className="label">Select Patient</ControlLabel>
             <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputPatient = ref; }}>
               <option value="select">select</option>
               <option value="other">...</option>
             </FormControl>
           </FormGroup>
           <FormGroup controlId="formControlsSelect">
-            <ControlLabel>Select Condition</ControlLabel>
+            <ControlLabel className="label">Select Condition</ControlLabel>
             <FormControl componentClass="select" placeholder="select" inputRef={ref => { this.inputCondition = ref; }}>
               <option value="select">select</option>
               <option value="other">...</option>
             </FormControl>
           </FormGroup>
+          <br/>
           <Button type="submit">Submit</Button>
         </Form>
         <SearchResults title={this.state.resultsTitle} resultsArray={this.state.resultsArray} />
