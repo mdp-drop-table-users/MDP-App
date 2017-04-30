@@ -2,6 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Form, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 import Typist from 'react-typist';
+import { RadioGroup, Radio } from 'react-radio-group';
+
 
 class SearchResults extends Component {
   constructor(props) {
@@ -28,7 +30,10 @@ export default class Search extends Component {
     this.state = {
       resultsTitle: '',
       resultsArray: [],
+      typeIndex: 0,
+      selectedValue: 'male',
     }
+    this.handleChange = this.handleChange.bind(this)
   }
   handleSubmit(e) {
     e.preventDefault();
@@ -49,19 +54,26 @@ export default class Search extends Component {
 
   onTyped(line, lineIdx) {
     console.log(line + " " + lineIdx);
+    this.setState({typeIndex: this.state.typeIndex++});
+  }
+
+  handleChange(value) {
+    this.setState({selectedValue: value});
+    console.log('handleChange', value)
   }
 
   render() {
+    const typeArray = [
+      'BEST MOVE',
+      'MEDICAL TRUST',
+      'DOCTOR',
+    ]
     return (
       <div className='Dashboard bgA'>
         <h1>FIND YOUR</h1>
         <h1 style={{color:"#26cba2"}}>
-          <Typist onLineTyped={this.onTyped.bind(this)}>
-              BEST MOVE
-              <br/>
-              MEDICAL TRUST
-              <br/>
-              PERFECT DOCTOR
+          <Typist key={this.state.typeIndex} onLineTyped={this.onTyped.bind(this)}>
+            {typeArray[this.state.typeIndex]}
           </Typist>
         </h1>
 
@@ -72,6 +84,12 @@ export default class Search extends Component {
               <option value="select">Select</option>
               <option value="other">...</option>
             </FormControl>
+          </FormGroup>
+          <FormGroup>
+            <RadioGroup className='radio-buttons' selectedValue={this.state.selectedValue} onChange={this.handleChange}>
+              <Radio value="male" />Male
+              <Radio value="female" />Female
+            </RadioGroup>
           </FormGroup>
           <FormGroup controlId="formControlsSelect">
             <ControlLabel className="label">Select Condition</ControlLabel>

@@ -27,7 +27,7 @@ body {
 .banner {
   width: 100%;
   background-color: #26cba2;
- 
+
   img {
   	position: relative;
   	display: inline-block;
@@ -134,4 +134,11 @@ body {
 	color: white;
 	background-color: #26cba2;
 	opacity: .8;
+}
+
+.radio-buttons {
+  > input {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
 }
