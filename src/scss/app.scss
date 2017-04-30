@@ -125,13 +125,14 @@ body {
 
 .bgA_wrap {
   width: 50%;
-  padding: 0vh 8vw;
+  padding: 0 60px;
   display: inline-grid;
 }
 
 // scrollbar
 .scrollDiv {
   overflow-y:scroll;
+  max-height: 60vh;
 }
 
 .bgA {
