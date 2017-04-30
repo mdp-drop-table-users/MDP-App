@@ -28,6 +28,7 @@ class SearchResult extends Component {
       <Row>
         <Col className="doctorFields" xs={9}>
           <h2>{this.props.result.name}</h2>
+          <br/><br/>
           <div>{this.props.result.reasons}</div>
         </Col>
         <Col className="doctorRank" style={{backgroundColor: this.getColor(this.props.result.match)}} xs={3}>
