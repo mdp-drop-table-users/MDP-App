@@ -48,13 +48,15 @@ class SearchResults extends Component {
     }
   }
   render() {
-    const componentsArray = this.props.resultsArray.map((result) => (
+    const {resultsArray, loading} = this.props;
+    const componentsArray = resultsArray.map((result) => (
       <SearchResult result={result} />
     ))
     return (
       <Grid className='bgA_wrap'>
-        <h2>HEALTHCARE PROVIDERS</h2>
-        
+        <div className="loader" style={loading ? {} : {display: 'none'}}></div>
+        <h2 style={resultsArray.length == 0 ? {display:'none'} : {}}>HEALTHCARE PROVIDERS</h2>
+
         <div className='scrollDiv styleScroll'>
           {componentsArray}
         </div>
@@ -71,6 +73,7 @@ export default class Search extends Component {
       resultsArray: [],
       typeIndex: 0,
       selectedValue: 'male',
+      loading: false,
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -133,9 +136,17 @@ export default class Search extends Component {
       },
     ]
     this.setState({
-      resultsTitle: this.inputCondition.value,
-      resultsArray: resultsArray,
-    })
+      loading: true,
+      resultsArray: [],
+    });
+    const tempThis = this;
+    setTimeout(() => {
+      tempThis.setState({
+        resultsTitle: this.inputCondition.value,
+        resultsArray: resultsArray,
+        loading: false,
+      })
+    }, 3000);
   }
 
   componentDidMount() {
@@ -228,7 +239,7 @@ export default class Search extends Component {
             </div>
           </Form>
         </div>
-        <SearchResults title={this.state.resultsTitle} resultsArray={this.state.resultsArray} />
+        <SearchResults title={this.state.resultsTitle} resultsArray={this.state.resultsArray} loading={this.state.loading} />
       </div>
     );
   }
