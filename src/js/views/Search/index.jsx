@@ -16,11 +16,11 @@ class SearchResult extends Component {
     } else if (match < 70) {
       return '#cfd68f';
     } else if (match < 80) {
-      return '#9fce90';
+      return '#eff254';
     } else if (match < 90) {
       return '#9eefdb';
     } else {
-      return '#eff254';
+      return '#1be59e';
     }
   }
   render() {
@@ -52,8 +52,10 @@ class SearchResults extends Component {
       <SearchResult result={result} />
     ))
     return (
-      <Grid className='bgA_wrap scrollDiv styleScroll'>
-        {componentsArray}
+      <Grid className='bgA_wrap'>
+        <div className='scrollDiv styleScroll'>
+          {componentsArray}
+        </div>
       </Grid>
     )
   }
