@@ -133,6 +133,8 @@ body {
 .scrollDiv {
   overflow-y:scroll;
   max-height: 60vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .bgA {
@@ -203,13 +205,13 @@ body {
 .styleScroll::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #F5F5F5;
+  background-color: #26cba2;
 }
 
 .styleScroll::-webkit-scrollbar
 {
   width: 6px;
-  background-color: #F5F5F5;
+  background-color: #26cba2;
 }
 
 .styleScroll::-webkit-scrollbar-thumb
@@ -224,6 +226,8 @@ body {
   padding-top: 1vh;
   padding-bottom: 1vh;
   text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: .15vw;
 
   h2 {
     margin: 0;
@@ -232,6 +236,7 @@ body {
     font-size: 2vh;
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: .7vw;
   }
 }
 
@@ -239,10 +244,10 @@ body {
   color: white;
   background-color: #26cba2;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
-  line-height: 60px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
 
   .doctorScore {
   }
